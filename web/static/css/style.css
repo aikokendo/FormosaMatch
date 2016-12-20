@@ -1,0 +1,45 @@
+.icon-block {
+padding: 0 15px;
+}
+.prefix {
+  padding-top: 13px;
+}
+
+.brand-logo{
+  height: 160px;
+}
+.icon-block .material-icons {
+font-size: inherit;
+}
+.parallax-text {
+  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+}
+.parallax-container {
+min-height: 380px;
+line-height: 0;
+height: auto;
+color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+.parallax-container .section {
+  position: absolute;
+  top: 40%;
+}
+#index-banner .section {
+  top: 10%;
+}
+}
+
+@media only screen and (max-width : 600px) {
+#index-banner .section {
+  top: 0;
+}
+}
+
+#signin-modal {
+  width: 30%;
+}

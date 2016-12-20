@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "partials/head.html" %}
+  </head>
+  <body>
+    <nav class="deep-purple lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <ul class="right">
+          <li><span>Have an account?</span> </li>
+          <li><a class="" href="#signin-modal">Sign in</a></li>
+        </ul>
+
+
+      </div>
+    </nav>
+
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="caption center-align">
+          <br><br>
+
+          <img class="brand-logo" src="../static/img/logo.png" alt="">
+          <!-- <h3 class="header center teal-text text-lighten-2">Formosa Match</h3> -->
+          <h4 class="header col s12 parallax-text grey-text text-lighten-3">Welcome to the best dating site in Taiwan!</h4>
+
+          <br><br>
+        </div>
+      </div>
+
+      <div class="parallax"><img src="../static/img/background.jpg" alt=""></div>
+    </div>
+    <div class="">
+
+      <form class="col s12">
+        <div id="signup-container" class="container">
+          <div class="section">
+            <div class="row center sign-up-1" >
+              <h4 class="header col s12 light text-lighten-3">I'm a</h4>
+
+              <div class="input-field col s12 m4  push-m1">
+                <select class="">
+                  <option value="1" selected>Straight</option>
+                  <option value="2">Gay</option>
+                  <option value="3">Bisexual</option>
+                </select>
+              </div>
+
+              <div class="input-field col s12 m4 push-m1">
+                <select>
+                  <option value="1" selected>Man</option>
+                  <option value="2">Woman</option>
+                  <option value="3">Rather not say</option>
+                </select>
+              </div>
+              <div class="col s12 m3 push-m1">
+                <a id="sign-up" class="btn-large waves-effect waves-light lighten-1">Match me!</a>
+              </div>
+            </div>
+            <!--  End of Sign up Step 1-->
+            <!--  Sign up Step 2-->
+            <div class="row center sign-up-2" style="display:none;">
+              <h4 class="header col s12 light text-lighten-3">Just a few more steps!</h4>
+              <div class="row">
+                <div class="input-field col s12 m6 push-m3">
+                  <input type="date" id="birth_date" name="" class="datepicker">
+                  <label for="birth_date" >Birthdate</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12 m3 push-m3">
+                    <input id="country" type="text" >
+                    <label for="country">Country</label>
+                </div>
+                <div class="input-field col s12 m3 push-m3">
+                    <input id="city" type="text" >
+                    <label for="city">City</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12 m6 push-m3">
+                  <input type="email" id="email" >
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="s12 m3 push-m1">
+                <a id="back-sign-up-1" class="btn-large waves-effect waves-light lighten-1">Back</a>
+                <a id="sign-up-2" class="btn-large waves-effect waves-light lighten-1">Next</a>
+              </div>
+            </div>
+            <!--  End of Sign up Step 2-->
+            <!--  Sign up Step 3 -->
+            <div class="row center sign-up-3" style="display:none;">
+              <h4 class="header col s12 light text-lighten-3">Last step. Promise!</h4>
+              <div class="row">
+                <div class="input-field col s12 m6 push-m3">
+                  <input type="text" id="username" >
+                  <label for="username">Username</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12 m6 push-m3">
+                  <input type="password" id="password-signup" >
+                  <label for="password-signup">Password</label>
+                </div>
+              </div>
+              <div class="s12 m3 push-m1">
+                <a id="back-sign-up-2" class="btn-large waves-effect waves-light lighten-1">Back</a>
+                <a id="sign-up-3" class="btn-large waves-effect waves-light lighten-1">Done!</a>
+              </div>
+            </div>
+            <!-- End of Sign up Step 3 -->
+          </div>
+        </div>
+      </form>
+      <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center deep-purple-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center">It's free!</h5>
+
+              <p class="light">Signing up takes two minutes and is totally free! Like no money at all, super totally free. #suchfree #verywow</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center deep-purple-text"><i class="material-icons">group</i></h2>
+              <h5 class="center">Find the perfect one.</h5>
+
+              <p class="light">Our matching algorithm helps you find the right people around your area. And don't worry we will help you get there!</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center deep-purple-text"><i class="material-icons">settings</i></h2>
+              <h5 class="center">Easy to work with</h5>
+
+              <p class="light">You are a few clicks away from your perfect match...And maybe one or two likes.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br><br>
+    </div>
+
+    <!--  Footer -->
+    <footer class="page-footer deep-purple lighten-1">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">K9 WOW</h5>
+            <p class="grey-text text-lighten-4">Our team has one goal in mind, everyone should have their perfect match. We work hard to give you very wow applications (such development very wow).</p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+    <!-- Sign in Modal -->
+    <div id="signin-modal" class="modal">
+      <div class="modal-content">
+        <h5 class="center">Sign in</h5>
+        <!-- Email / Username input -->
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="emailusername" type="email">
+            <label for="emailusername">Email / Username</label>
+          </div>
+        </div>
+        <!--  Password input -->
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password-signin" type="password" class="validate">
+            <label for="password-signin">Password</label>
+          </div>
+        </div>
+        <div class="center">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Let's go
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <!--  End of Sign in Modal-->
+    <!--  Scripts -->
+    {% include "partials/scripts.html" %}
+    <!--  End of Scripts-->
+  </body>
+</html>

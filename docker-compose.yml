@@ -1,0 +1,35 @@
+# Modified for a Project for an Advanced Databases Course
+# Based on realpython/orchestrating-docker "https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/"
+# and DBProductions/neo4j-flask "https://github.com/DBProductions/neo4j-flask"
+
+web:
+  restart: always
+  build: ./web
+  expose:
+    - "8000"
+  links:
+    - neo4j:neo4j
+  volumes:
+    - /usr/src/app/static
+  env_file: .env
+  command: /usr/local/bin/gunicorn -w 2 -b :8000 app:app
+
+nginx:
+  restart: always
+  build: ./nginx/
+  ports:
+    - "80:80"
+  volumes:
+    - /www/static
+  volumes_from:
+    - web
+  links:
+    - web:web
+
+neo4j:
+  image: tpires/neo4j
+  env_file: .env
+  cap_add:
+   - SYS_RESOURCE
+  ports:
+   - "7474:7474"
